@@ -559,8 +559,8 @@ background-position: -40px -226px {
   padding-top: 13px;
   padding-bottom: 10px;
 }
-.btn.ver-ambientes::after,
-content "" {
+.ver-ambientes:after {
+  content: "";
   background-image: url("../images/sprite-promart.png");
   width: 11px;
   height: 15px;
