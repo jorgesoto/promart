@@ -339,6 +339,73 @@ td {
 br {
   line-height: 1;
 }
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/lato-regular.woff2") format('woff2'), url("../fonts/lato/lato-regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato Bold';
+  src: url("../fonts/lato/lato-bold.woff2") format('woff2'), url("../fonts/lato/lato-bold.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bebasneue';
+  src: url("../fonts/bebasneue/bebasneue-regular.woff2") format('woff2'), url("../fonts/bebasneue/bebasneue-regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'promart';
+  src: url("../fonts/promart.eot?9id19o");
+  src: url("../fonts/promart.eot?9id19o#iefix") format('embedded-opentype'), url("../fonts/promart.ttf?9id19o") format('truetype'), url("../fonts/promart.woff?9id19o") format('woff'), url("../fonts/promart.svg?9id19o#promart") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'promart' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-centros:before {
+  content: "\e900";
+}
+.icon-combazo:before {
+  content: "\e901";
+}
+.icon-dormitorio:before {
+  content: "\e902";
+}
+.icon-dormitorio2:before {
+  content: "\e903";
+}
+.icon-escritorio:before {
+  content: "\e904";
+}
+.icon-inicio:before {
+  content: "\e905";
+}
+.icon-mas-muebles:before {
+  content: "\e906";
+}
+.icon-roperos:before {
+  content: "\e907";
+}
+.icon-sala:before {
+  content: "\e908";
+}
+.icon-share:before {
+  content: "\e909";
+}
 .wancho {
   width: 96%;
   max-width: 100%;
@@ -358,49 +425,345 @@ a:focus {
 @-moz-keyframes bounce {
   0% {
     opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
   }
   100% {
     opacity: 1;
-    -ms-filter: none;
-    filter: none;
   }
 }
 @-webkit-keyframes bounce {
   0% {
     opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
   }
   100% {
     opacity: 1;
-    -ms-filter: none;
-    filter: none;
   }
 }
 @-o-keyframes bounce {
   0% {
     opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
   }
   100% {
     opacity: 1;
-    -ms-filter: none;
-    filter: none;
   }
 }
 @keyframes bounce {
   0% {
     opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
   }
   100% {
     opacity: 1;
-    -ms-filter: none;
-    filter: none;
   }
 }
-/*# sourceMappingURL=styles.css.map */
+body.main {
+  background-image: url("../images/pages/foto_main.jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+body.dormitorio,
+background-image url("../images/pages/dormitorio-principal.jpg") {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.content-page {
+  float: left;
+  width: 93%;
+  height: 100%;
+}
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+.mbl {
+  display: none;
+}
+.header-principal {
+  display: none;
+  background: #fff;
+  height: 126px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 22;
+}
+.vn {
+  color: #fff;
+  font-size: 13px;
+  top: 23px;
+  position: absolute;
+  padding-left: 23px;
+  text-shadow: 1px 1px #562813;
+}
+.ver_navegacion,
+left 35px,
+.ocultar_navegacion {
+  top: 140px !important;
+}
+.ir_promart {
+  right: 47px;
+}
+.vn::before,
+content "" {
+  background-image: url("../images/sprite-promart.png");
+  width: 17px;
+  height: 17px;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 5px;
+}
+.ver_navegacion::before,
+background-position -16px -229px,
+.ir_promart::before,
+background-position: -40px -226px {
+  height: 17px;
+  top: 2px;
+}
+.content-page .title-especial {
+  font-family: 'Lato Bold', sans-serif;
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-top: 216px;
+  color: #fff;
+  line-height: 60px;
+}
+.content-page .legenda {
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin-top: 22px;
+  font-family: 'Bebasneue', sans-serif;
+  letter-spacing: 1px;
+}
+.btn {
+  background: #fe9424;
+  color: #fff;
+  padding: 16px;
+  display: block;
+  margin: 5% auto 0 auto;
+  width: 194px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+  position: relative;
+  padding-top: 13px;
+  padding-bottom: 10px;
+}
+.btn.ver-ambientes::after,
+content "" {
+  background-image: url("../images/sprite-promart.png");
+  width: 11px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  background-position: 0px -229px;
+}
+.menu {
+  background-color: #fff;
+  float: left;
+  height: 100%;
+  max-width: 7%;
+  overflow: hidden;
+  width: 86px;
+}
+.menu ul.nav li {
+  margin: 5px auto;
+  overflow: hidden;
+  display: block;
+  width: 50px;
+  text-align: center;
+}
+menu ul.nav li.menu-inicio {
+  margin-top: 16px;
+}
+.menu ul.nav li.menu-muebles-especial {
+  margin-top: 110px;
+  margin-bottom: 17px;
+}
+.menu ul.nav li a {
+  font-size: 9px;
+  color: #5f5f5f;
+  line-height: 10px;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.menu .icon-menu {
+  background-repeat: no-repeat;
+  font-family: 'Lato', sans-serif;
+  background-color: #ebebeb;
+  border-radius: 50%;
+  display: block;
+  height: 38px;
+  width: 38px;
+  margin: auto auto 7px auto;
+  font-size: 33px;
+  color: #898989;
+  line-height: 38px;
+}
+.menu ul.nav li a:hover .icon-menu,
+.menu ul.nav li a.active .icon-menu {
+  background-color: #f18985;
+  color: #b80034;
+}
+.dormitorio .menu ul.nav li a:hover .icon-menu,
+.dormitorio .menu ul.nav li a.active .icon-menu {
+  background-color: #41b5ce;
+  color: #005e73;
+}
+.menu-compartir .icon-share {
+  font-size: 20px;
+}
+.menu .linea {
+  display: block;
+  margin: 0 auto;
+  width: 1px;
+  background-color: #ebebeb;
+  height: 22px;
+}
+@media (min-width: 490px) and (max-width: 750px) {
+  .content-page .title-especial {
+    font-size: 71px;
+  }
+  .content-page .legenda {
+    font-size: 44px;
+  }
+}
+@media (max-width: 750px) {
+  .menu {
+    display: none;
+  }
+  .content-page {
+    float: none;
+    width: 100%;
+  }
+  .mbl {
+    display: block;
+  }
+  .hidden-mbl {
+    display: none;
+  }
+  .logo-movil {
+    margin: 0 auto;
+    max-width: 50%;
+  }
+  .ver_navegacion {
+    left: 10px;
+    width: 20%;
+    max-width: 90px;
+    font-size: 18px;
+    line-height: 18px;
+    top: 10px;
+    padding-left: 35px;
+  }
+  .ver_navegacion::before {
+    background-position: -2px -247px;
+  }
+  .vn::before {
+    width: 30px;
+    height: 19px;
+    top: 9px;
+  }
+  .menu-movil {
+    position: relative;
+  }
+  .menu-movil .nav-movil {
+    background-color: #fefefe;
+    height: 110px;
+    bottom: 0px;
+    position: absolute;
+    z-index: 999;
+    display: block;
+    width: 100%;
+  }
+  ul.nav-movil li {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    font-size: 21px;
+  }
+  ul.nav-movil li a {
+    color: #898989;
+    font-family: "Lato Bold";
+  }
+  .nav-movil .icon-menu {
+    display: block;
+    font-size: 80px;
+  }
+  .nav-movil .icon-share {
+    font-size: 64px;
+  }
+}
+@media (max-width: 480px) {
+  .vn::before {
+    background-position: -16px -229px;
+    width: 17px;
+  }
+  .ver_navegacion {
+    left: 5px;
+    font-size: 13px;
+    line-height: 11px;
+    top: 10px;
+    padding-left: 23px;
+  }
+  .logo-movil {
+    max-width: 45%;
+  }
+  .menu-movil .nav-movil {
+    height: 80px;
+  }
+  .content-page .title-especial {
+    margin-top: 130px;
+  }
+  ul.nav-movil li {
+    font-size: 13px;
+  }
+  .nav-movil .icon-menu {
+    font-size: 60px;
+  }
+  .nav-movil .icon-share {
+    font-size: 40px;
+    top: -7px;
+  }
+}
+@media (max-width: 375px) {
+  .logo-movil {
+    max-width: 60%;
+  }
+  .ver_navegacion {
+    display: none;
+  }
+  .content-page .title-especial {
+    margin-top: 110px;
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .content-page .legenda {
+    font-size: 23px;
+  }
+  .nav-movil .icon-menu {
+    font-size: 50px;
+  }
+  ul.nav-movil li {
+    font-size: 11px;
+  }
+  .nav-movil .icon-share {
+    font-size: 35px;
+    top: -7px;
+  }
+  .menu-movil .nav-movil {
+    height: 70px;
+  }
+}
