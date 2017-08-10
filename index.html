@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Promart HOMECENTER</title>
+
+<script language="javascript" src="http://io.vtex.com.br/front-libs/jquery/1.8.3/jquery-1.8.3.min.js?v=1.4.774.1409"  type="text/javascript"></script>
+
+<link rel="stylesheet" href="http://www.promart.pe/files/main.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/style-movil.css" />
+
+<script type="text/javascript">
+$(document).ready(function($){
+	var ventana_alto = $(window).height();
+	$(".content-principal").attr("style","height:"+ventana_alto+"px;");
+	
+	$(".ver_navegacion").click(function(){
+		if ($("#header-principal").is(":hidden")){
+			$("#header-principal").slideDown("slow");
+			$(".ver_navegacion").addClass("ocultar_navegacion");
+			$(".ver_navegacion").html("Ocultar navegación");
+		}else{
+			$("#header-principal").hide();
+			$(".ver_navegacion").removeClass("ocultar_navegacion");
+			$(".ver_navegacion").html("Ver navegación");
+		}
+	});
+}); 
+</script>
+</head>
+
+<body class="main">
+
+<div class="content-principal content-main">
+	<div id="header-principal" class="header-principal">
+    	<center>EL HEADER AQUI</center>
+    </div>
+    
+    <div class="menu">
+    	<ul class="nav">
+        	<li class="menu-inicio">
+            	<a href="index.html" title="Inicio" class="active"><span class="icon-menu icon-inicio"></span> Inicio</a>
+            </li>
+            <li class="menu-dormitorio-principal">
+            	<span class="linea"></span>
+                <a href="dormitorio-principal.html" title="Dormitorio principal"><span class="icon-menu icon-dormitorio"></span>Dormitorio principal</a>
+           	</li>
+            <li class="menu-dormitorio-ninos">
+            	<span class="linea"></span>
+                <a href="#" title="Dormitorio para niños"><span class="icon-menu icon-dormitorio2"></span> Dormitorio para niños</a>
+           	</li>
+            <li class="menu-sala">
+            	<span class="linea"></span>
+                <a href="#" title="Sala"><span class="icon-menu icon-sala"></span> Sala</a>
+          	</li>
+            <li class="menu-escritorio">
+            	<span class="linea"></span>
+                <a href="#" title="Escritorio"><span class="icon-menu icon-escritorio"></span> Escritorio</a>
+           	</li>
+            <li class="menu-muebles-especial">
+            	<a href="#" title="Muebles del especial"><span class="icon-menu icon-mas-muebles"></span> Muebles del especial</a>
+        	</li>
+            <li class="menu-compartir">
+            	<a href="#" title="Compartir"><span class="icon-menu icon-share"></span> Compartir</a>
+           	</li>
+        </ul>
+    </div>
+    
+    <div class="content-page">
+    	<div class="content-navegacion">
+            <a href="#" title="Ver navegación" class="vn ver_navegacion">Ver navegación</a>
+            <img src="images/promart.jpg" alt="PORMART" class="logo hidden-mbl"/>
+            <img src="images/promart-movil.jpg" alt="PORMART" class="logo-movil mbl"/>
+            <a href="http://www.promart.pe/" target="_blank" title="Ir a Promart.pe" class="vn ir_promart hidden-mbl">Ir a Promart.pe</a>
+        </div>
+        
+        <span class="title-especial">Especial muebles</span>
+        <span class="legenda">Tu hogar, tus reglas, tu mundo</span>
+        
+        <a href="" class="btn ver-ambientes" title="Ver ambientes">VER AMBIENTES</a>
+    </div>
+    
+</div>
+
+<div class="menu-movil mbl">
+    <ul class="nav-movil">
+        <li class="menu-general"><a href="#" title="Menú" class="active"><span class="icon-menu icon-inicio"></span> Menú</a></li>
+        <li class="menu-muebles-especial"><a href="#" title="Muebles del especial" class="active"><span class="icon-menu icon-mas-muebles"></span> Muebles del especial</a></li>
+        <li class="menu-compartir"><a href="#" title="Compartir" class="active"><span class="icon-menu icon-share"></span> Compartir</a></li>
+    </ul>
+</div>
+
+</body>
+</html>

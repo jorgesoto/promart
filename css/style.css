@@ -1,0 +1,509 @@
+/* ================== Reset ========================= */
+html, button, input, select, textarea {
+	color: #222;
+}
+body {
+	font-size: 1em;
+	line-height: 1.4;
+}
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+img {
+	vertical-align: middle;
+}
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+textarea {
+	resize: vertical;
+}
+ul {
+	list-style-type: none;
+}
+.chromeframe {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* ======================= Default styles ======================== */
+html, a, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, input, textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+a, a:active, a:focus {
+	outline: none;
+	-moz-outline-style: none;
+}
+img {
+	display: block;
+}
+html {
+	overflow-x: hidden;
+}
+* {
+	position: relative;
+}
+
+body{
+	font-family: 'Lato';
+}
+
+body.main {
+    background-image: url("../images/pages/foto_main.jpg");
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+body.dormitorio {
+    background-image: url("../images/pages/dormitorio-principal.jpg");
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/lato-regular.woff2") format('woff2'), url("../fonts/lato/lato-regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato Bold';
+  src: url("../fonts/lato/lato-bold.woff2") format('woff2'), url("../fonts/lato/lato-bold.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebasneue';
+  src: url("../fonts/bebasneue/bebasneue-regular.woff2") format('woff2'), url("../fonts/bebasneue/bebasneue-regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'promart';
+  src:  url('../fonts/promart.eot?9id19o');
+  src:  url('../fonts/promart.eot?9id19o#iefix') format('embedded-opentype'),
+    url('../fonts/promart.ttf?9id19o') format('truetype'),
+    url('../fonts/promart.woff?9id19o') format('woff'),
+    url('../fonts/promart.svg?9id19o#promart') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'promart' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-centros:before {
+	content: "\e900";
+}
+
+.icon-combazo:before {
+	content: "\e901";
+}
+
+.icon-dormitorio:before {
+	content: "\e902";
+}
+
+.icon-dormitorio2:before {
+	content: "\e903";
+}
+
+.icon-escritorio:before {
+	content: "\e904";
+}
+
+.icon-inicio:before {
+	content: "\e905";
+}
+
+.icon-mas-muebles:before {
+	content: "\e906";
+}
+
+.icon-roperos:before {
+ 	content: "\e907";
+}
+
+.icon-sala:before {
+	content: "\e908";
+}
+
+.icon-share:before {
+	content: "\e909";
+}
+
+.menu{
+	height: 100%;
+	width: 86px;
+	background-color: #ffffff;
+	overflow: hidden;
+	float: left;
+	max-width: 7%;
+}
+
+.menu ul.nav li{
+	margin: 5px auto;
+	overflow: hidden;
+	display: block;
+	width: 50px;
+	text-align: center;
+}
+
+.menu ul.nav li.menu-inicio{
+	margin-top: 16px;
+}
+
+.menu ul.nav li.menu-muebles-especial{
+	margin-top: 110px;
+	margin-bottom: 17px;
+}
+
+.menu ul.nav li a{
+	font-size: 9px;
+	color: #5f5f5f;
+	line-height: 10px;
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.menu .icon-menu{
+	background-repeat: no-repeat;
+	font-family: "Lato",sans-serif;
+	background-color: #ebebeb;
+	border-radius: 50%;
+	display: block;
+	height: 38px;
+	width: 38px;
+	margin: auto auto 7px auto;
+	font-size: 33px;
+	color: #898989;
+	line-height: 38px;
+}
+
+.menu ul.nav li a:hover .icon-menu, .menu ul.nav li a.active .icon-menu{
+	background-color: #f18985;
+	color: #b80034;
+}
+
+.dormitorio .menu ul.nav li a:hover .icon-menu, .dormitorio .menu ul.nav li a.active .icon-menu{
+	background-color: #41b5ce;
+	color: #005e73;
+}
+
+
+.menu-compartir .icon-share{
+	font-size: 20px;
+}
+
+.menu .linea{
+	display: block;
+	margin: 0 auto;
+	width: 1px;
+	background-color: #ebebeb;
+	height: 22px;
+}
+
+.content-page{
+	float: left;
+	width: 93%;
+	height: 100%;
+}
+
+.logo{
+	display: block;
+	margin: 0 auto;
+}
+
+.content-page .title-especial{
+	font-family: 'Lato Bold', sans-serif;
+	display: block;
+	text-align: center;
+	font-size: 50px;
+	text-transform: uppercase;
+	margin-top: 216px;
+	color: #fff;
+	line-height: 60px;
+}
+
+.content-page .legenda{
+	font-size: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-top: 22px;
+    font-family: 'Bebasneue', sans-serif;
+	letter-spacing: 1px;
+}
+
+.btn{
+	background: #fe9424;
+	color: #fff;
+	padding: 16px;
+	display: block;
+	margin: 5% auto 0 auto;
+	width: 194px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 12px;
+	letter-spacing: 1px;
+	position: relative;
+	height: 40px;
+	padding-top: 13px;
+	padding-bottom: 10px;
+}
+
+.btn.ver-ambientes::after {
+   	content: "";
+	background-image: url("../images/sprite-promart.png");
+	width: 11px;
+	height: 15px;
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 17px;
+	background-position: 0px -229px;
+}
+
+.vn{
+	color: #ffffff;
+	font-size: 13px;
+	top: 23px;
+	position: absolute;
+	padding-left: 23px;
+	text-shadow: 1px 1px #562813;
+}
+
+.ver_navegacion {
+    left: 35px;
+}
+
+.ocultar_navegacion{
+	top: 140px !important;
+}
+
+.ir_promart {
+    right: 47px;
+}
+
+.vn::before {
+   	content: "";
+	background-image: url("../images/sprite-promart.png");
+	width: 17px;
+	height: 17px;
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 5px;
+}
+
+.ver_navegacion::before {
+    background-position: -16px -229px;
+}
+
+.ir_promart::before {
+    background-position: -40px -226px;
+	height: 17px;
+	top: 2px;
+}
+
+.header-principal{
+	display: none;
+	background: #ffffff;
+	height: 126px;
+	position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 22;
+}
+
+.mbl{
+	display: none;
+}
+
+
+/*Style dormitorio*/
+.btn-cajones {
+    width: 100%;
+    height: 100%;
+}
+
+.sprite{
+	background-image: url("../images/sprite-promart.png");
+}
+
+.vermas{
+	background-position: -34px -248px;
+	display: block;
+	content: "";
+	color: transparent;
+	height: 50px;
+	position: absolute;
+	width: 47px;
+}
+
+.vermas:hover {
+    background-position: -92px -232px;
+	height: 62px;
+	width: 67px;
+}
+
+
+.btn-cajones .nochero {
+    left: 28%;
+    top: 62%;
+}
+
+.btn-cajones .ropero {
+    left: 46%;
+    top: 30%;
+}
+
+.btn-cajones .comoda {
+    left: 94%;
+    top: 50%;
+}
+
+.btn-nav{
+	position: relative;
+}
+
+.btn-nav .bn-next{
+	display: block;
+	text-align: center;
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	font-size: 15px;
+}
+
+.btn-nav .btn-siguiente{
+	color: #ffffff;
+	padding-right: 24px;
+}
+
+.txshadow {
+    text-shadow: 1px 1px #562813;
+}
+
+.btn-nav .btn-siguiente::after {
+   	content: "";
+	background-image: url("../images/sprite-promart.png");
+	width: 26px;
+	height: 24px;
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background-position: 9px -274px;
+}
+
+.btn-cajones .vermas a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.tooltip_elemento {
+	position: relative;
+}
+
+.tooltip {
+	display: block;
+	position: absolute;
+	width: 200px;    
+	padding: 10px;
+	margin: 5px 0 12px 0;    
+	z-index: 100;
+	background: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	font-size: 11px;
+	border-radius: 10px;
+	
+	top: 100%;
+	left: 50%; 
+	margin-left: -80px;
+}	
+
+.tooltip:after {
+	content: " ";
+	position: absolute;
+	bottom: 100%;  /* At the top of the tooltip */
+	left: 50%;
+	margin-left: -5px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: transparent transparent  rgba(0, 0, 0, 0.7) transparent;
+}
+
+.tooltip strong{
+	font-family: "Lato Bold";
+	display: block;
+	font-size: 15px;
+}
+
+.tooltip span{
+	display: block;
+	font-size: 12px;
+}
+
+
+
+

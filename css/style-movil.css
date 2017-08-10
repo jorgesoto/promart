@@ -1,0 +1,168 @@
+@media (min-width: 490px) and (max-width: 750px) { 
+	.content-page .title-especial {
+		font-size: 71px;
+	}
+	
+	.content-page .legenda{
+		font-size: 44px;
+	}
+
+}
+
+@media (max-width: 750px) { 
+	.menu{
+		display: none;
+	}
+	
+	.content-page{
+		float: none;
+		width: 100%;
+	}
+	
+	.mbl{
+		display: block;
+	}
+	
+	.hidden-mbl{
+		display: none;
+	}
+	
+	.logo-movil{
+		margin: 0 auto;
+		max-width: 50%;
+	}
+	
+	.ver_navegacion {
+		left: 10px;
+		width: 20%;
+		max-width: 90px;
+		font-size: 18px;
+		line-height: 18px;
+		top: 10px;
+		padding-left: 35px;
+	}
+	
+	.ver_navegacion::before {
+		background-position: -2px -247px;
+	}
+
+	.vn::before {
+		width: 30px;
+		height: 19px;
+		top: 9px;
+	}
+	
+	.menu-movil{
+		position:relative;
+	}
+	
+	.menu-movil .nav-movil{
+		background-color: #fefefe;
+		height: 110px;
+		bottom: 0px;
+		position: absolute;
+		z-index: 999;
+		display: block;
+		width: 100%;
+	}
+	
+	ul.nav-movil li{
+		display: inline-block;
+		width: 32%;
+		text-align: center;
+		font-size: 21px;
+	}
+
+	ul.nav-movil li a{
+		color: #898989;
+		font-family: "Lato Bold";
+	}
+	
+	.nav-movil .icon-menu{
+		display: block;
+		font-size: 80px;
+	}
+	
+	.nav-movil .icon-share{
+		font-size: 64px;
+	}
+
+}
+
+@media (max-width: 480px) { 
+	.vn::before {
+		background-position: -16px -229px;
+		width: 17px;
+	}
+	
+	.ver_navegacion {
+		left: 5px;
+		font-size: 13px;
+		line-height: 11px;
+		top: 10px;
+		padding-left: 23px;
+	}
+	
+	.logo-movil {
+		max-width: 45%;
+	}
+	
+	.menu-movil .nav-movil{
+		height: 80px;
+	}
+
+	.content-page .title-especial{
+		margin-top: 130px;
+	}
+	
+	ul.nav-movil li{
+		font-size: 13px;
+	}
+	
+	.nav-movil .icon-menu{
+		font-size: 60px;
+	}
+	
+	.nav-movil .icon-share{
+		font-size: 40px;
+		top: -7px;
+	}
+}
+
+@media (max-width: 375px) { 
+	.logo-movil {
+		max-width: 60%;
+	}
+	
+	.ver_navegacion {
+		display: none;
+	}
+	
+	.content-page .title-especial {
+		margin-top: 110px;
+		font-size: 45px;
+		line-height: 50px;
+	}
+	
+	.content-page .legenda {
+    	font-size: 23px;
+	}
+	
+	.nav-movil .icon-menu {
+		font-size: 50px;
+	}
+	
+	ul.nav-movil li {
+		font-size: 11px;
+	}
+	
+	.nav-movil .icon-share {
+		font-size: 35px;
+		top: -7px;
+	}
+	
+	.menu-movil .nav-movil {
+		height: 70px;
+	}
+
+}
