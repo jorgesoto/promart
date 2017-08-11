@@ -1,29 +1,37 @@
 *
 	position relative
 
-body.page
-	width 100%
+div.page
+	width 95%
 	background-size cover
 	background-repeat no-repeat
 	background-position center center
 	background-attachment fixed
     
-body.main
+div.home
 	background-image url("../images/pages/foto_main.jpg")
 	
-body.dormitorio
+div.dormitorio
 	background-image url("../images/pages/dormitorio-principal.jpg")
 
-body.dormitorio-ninos
+div.dormitorio-ninos
 	background-image url("../images/pages/dormitorio-ninos.jpg")
 
-body.sala
+div.sala
 	background-image url("../images/pages/sala.jpg")
+
+div.escritorio
+	background-image url("../images/pages/escritorio.jpg")
 	
 .content-page
-	float left
+	float right
 	width 93%
 	height 100%
+
+.content-navegacion
+	position: absolute;
+	width: 100%;
+	z-index: 2;
 	
 .logo
 	display block
@@ -68,7 +76,7 @@ body.sala
 	top 2px
 
 .ver_navegacion
-	left 35px
+	left 120px
 
 .ocultar_navegacion
 	top 140px !important
@@ -165,3 +173,6 @@ body.sala
 .btn-cajones
 	width 100%
 	height 100%
+
+.ocultar
+	display none

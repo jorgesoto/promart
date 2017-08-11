@@ -486,29 +486,37 @@ a:focus {
 * {
   position: relative;
 }
-body.page {
-  width: 100%;
+div.page {
+  width: 95%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
 }
-body.main {
+div.home {
   background-image: url("../images/pages/foto_main.jpg");
 }
-body.dormitorio {
+div.dormitorio {
   background-image: url("../images/pages/dormitorio-principal.jpg");
 }
-body.dormitorio-ninos {
+div.dormitorio-ninos {
   background-image: url("../images/pages/dormitorio-ninos.jpg");
 }
-body.sala {
+div.sala {
   background-image: url("../images/pages/sala.jpg");
 }
+div.escritorio {
+  background-image: url("../images/pages/escritorio.jpg");
+}
 .content-page {
-  float: left;
+  float: right;
   width: 93%;
   height: 100%;
+}
+.content-navegacion {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
 }
 .logo {
   display: block;
@@ -553,7 +561,7 @@ body.sala {
   top: 2px;
 }
 .ver_navegacion {
-  left: 35px;
+  left: 120px;
 }
 .ocultar_navegacion {
   top: 140px !important;
@@ -651,6 +659,9 @@ body.sala {
   width: 100%;
   height: 100%;
 }
+.ocultar {
+  display: none;
+}
 .content-page .title-especial {
   font-family: 'Lato Bold', sans-serif;
   display: block;
@@ -701,9 +712,11 @@ body.sala {
   background-color: #fff;
   float: left;
   height: 100%;
-  max-width: 7%;
+  max-width: 5%;
   overflow: hidden;
+  position: fixed;
   width: 86px;
+  z-index: 10;
 }
 .menu ul.nav li {
   margin: 5px auto;
@@ -712,7 +725,7 @@ body.sala {
   width: 50px;
   text-align: center;
 }
-menu ul.nav li.menu-inicio {
+.menu ul.nav li.menu-inicio {
   margin-top: 16px;
 }
 .menu ul.nav li.menu-muebles-especial {
@@ -748,9 +761,9 @@ menu ul.nav li.menu-inicio {
   color: #b80034;
 }
 .menu ul.nav li.menu-dormitorio-principal:hover a .icon-menu,
-.dormitorio .menu ul.nav li.menu-dormitorio-principal.active a .icon-menu,
+.menu ul.nav li.menu-dormitorio-principal.active a .icon-menu,
 .menu ul.nav li.menu-dormitorio-principal:hover .linea,
-.dormitorio .menu ul.nav li.menu-dormitorio-principal.active .linea {
+.menu ul.nav li.menu-dormitorio-principal.active .linea {
   background-color: #41b5ce;
   color: #005e73;
 }
@@ -787,6 +800,11 @@ menu ul.nav li.menu-inicio {
   }
 }
 @media (max-width: 750px) {
+  div.page {
+    width: 100%;
+    top: 0;
+    position: absolute;
+  }
   .menu {
     display: none;
   }
@@ -921,6 +939,6 @@ menu ul.nav li.menu-inicio {
   top: 63%;
 }
 .btn-cajones .sala-silla {
-  left: 80%;
+  left: 78%;
   top: 65%;
 }
