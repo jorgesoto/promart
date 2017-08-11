@@ -1,3 +1,6 @@
+*
+	position relative
+    
 body.main
 	background-image url("../images/pages/foto_main.jpg")
 	width 100%
@@ -7,7 +10,7 @@ body.main
 	background-attachment fixed
 
 body.dormitorio
-    background-image url("../images/pages/dormitorio-principal.jpg")
+	background-image url("../images/pages/dormitorio-principal.jpg")
 	width 100%
 	background-size cover
 	background-repeat no-repeat
@@ -69,3 +72,42 @@ body.dormitorio
     background-position: -40px -226px
 	height 17px
 	top 2px
+	
+.tooltip_elemento
+	position relative
+
+.tooltip
+	display block
+	position absolute
+	width 200px 
+	padding 10px
+	margin 5px 0 12px 0  
+	z-index 100
+	background rgba(0, 0, 0, 0.7)
+	color #fff
+	text-align center
+	font-weight bold
+	font-size 11px
+	border-radius 10px
+	top 100%
+	left 50%
+	margin-left -90px
+
+	&:after
+		content " "
+		position absolute
+		bottom 100%
+		left 50%
+		margin-left -5px
+		border-width 10px
+		border-style solid
+		border-color transparent transparent  rgba(0, 0, 0, 0.7) transparent
+
+	strong
+		font-family t-2
+		display block
+		font-size 15px
+
+	span
+		display block
+		font-size 12px
