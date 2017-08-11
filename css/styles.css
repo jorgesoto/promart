@@ -502,6 +502,9 @@ body.dormitorio {
 body.dormitorio-ninos {
   background-image: url("../images/pages/dormitorio-ninos.jpg");
 }
+body.sala {
+  background-image: url("../images/pages/sala.jpg");
+}
 .content-page {
   float: left;
   width: 93%;
@@ -758,6 +761,13 @@ menu ul.nav li.menu-inicio {
   background-color: #dbe25a;
   color: #005e73;
 }
+.menu ul.nav li.menu-sala:hover a .icon-menu,
+.menu ul.nav li.menu-sala.active a .icon-menu,
+.menu ul.nav li.menu-sala:hover .linea,
+.menu ul.nav li.menu-sala.active .linea {
+  background-color: #ffcba8;
+  color: #c1783d;
+}
 .menu-compartir .icon-share {
   font-size: 20px;
 }
@@ -901,4 +911,16 @@ menu ul.nav li.menu-inicio {
   .menu-movil .nav-movil {
     height: 70px;
   }
+}
+.btn-cajones .sala-multiuso {
+  left: 20%;
+  top: 25%;
+}
+.btn-cajones .sala-escritorio {
+  left: 60%;
+  top: 63%;
+}
+.btn-cajones .sala-silla {
+  left: 80%;
+  top: 65%;
 }
