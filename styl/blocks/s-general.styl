@@ -1,21 +1,21 @@
 *
 	position relative
+
+body.page
+	width 100%
+	background-size cover
+	background-repeat no-repeat
+	background-position center center
+	background-attachment fixed
     
 body.main
 	background-image url("../images/pages/foto_main.jpg")
-	width 100%
-	background-size cover
-	background-repeat no-repeat
-	background-position center center
-	background-attachment fixed
-
+	
 body.dormitorio
 	background-image url("../images/pages/dormitorio-principal.jpg")
-	width 100%
-	background-size cover
-	background-repeat no-repeat
-	background-position center center
-	background-attachment fixed
+
+body.dormitorio-ninos
+	background-image url("../images/pages/dormitorio-ninos.jpg")
 
 .content-page
 	float left
@@ -45,33 +45,34 @@ body.dormitorio
 	position absolute
 	padding-left 23px
 	text-shadow 1px 1px #562813
+	
+	&:before
+		content ""
+		background-image url("../images/sprite-promart.png")
+		width 17px
+		height 17px
+		display block
+		position absolute
+		left 0px
+		top 5px
+
+.ver_navegacion:before
+	background-position -16px -229px
+
+.ir_promart:before
+	background-position: -40px -226px
+	height 17px
+	top 2px
 
 .ver_navegacion
-    left 35px
+	left 35px
 
 .ocultar_navegacion
 	top 140px !important
 
 .ir_promart
 	right 47px
-
-.vn::before
-   	content ""
-	background-image url("../images/sprite-promart.png")
-	width 17px
-	height 17px
-	display block
-	position absolute
-	left 0px
-	top 5px
-
-.ver_navegacion::before
-    background-position -16px -229px
-
-.ir_promart::before
-    background-position: -40px -226px
-	height 17px
-	top 2px
+	text-decoration underline
 	
 .tooltip_elemento
 	position relative
@@ -111,3 +112,20 @@ body.dormitorio
 	span
 		display block
 		font-size 12px
+
+.sprite
+	background-image url("../images/sprite-promart.png")
+
+.vermas
+	background-position -34px -248px
+	display block
+	content ""
+	color transparent
+	height 50px
+	position absolute
+	width 47px
+
+	&:hover
+		background-position -92px -232px
+		height: 62px
+		width: 67px
