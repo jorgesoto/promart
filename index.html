@@ -24,16 +24,37 @@ $(document).ready(function($){
 			$(".ver_navegacion").html("Ver navegación");
 		}
 	});
+
+    $(".enlace").mouseenter(function (e) {             
+        var posMouse = e.pageX - this.offsetLeft; 
+        var textoTooltip = $(this).attr("data-rel"); 
+        
+        if (textoTooltip.length > 0) {
+            $(this).append('<div class="tooltip">' + textoTooltip + '</div>');
+            $(".enlace > div.tooltip").fadeIn(300);
+        }
+    });
+
+    $(".enlace").mouseleave(function () {             
+        $(".enlace > div.tooltip").fadeOut(300).delay(300).queue(function () {
+            $(this).remove();
+            $(this).dequeue();
+        });
+    });
 });
 
 function pasarPage(section){
     $(".content-page").hide();
     $('.'+section).toggle(100);
+    $(".menu .nav li").removeClass("active");
+    $(".menu-"+section).addClass("active");
+    $("body").removeClass();
+    $("body").addClass("section-"+section);
 }
 </script>
 </head>
 
-<body class="main">
+<body class="inicio">
 
 <div class="content-principal content-main">
 	<div id="header-principal" class="header-principal">
@@ -43,11 +64,11 @@ function pasarPage(section){
     <div class="menu">
     	<ul class="nav">
         	<li class="menu-inicio active">
-            	<a href="javascript:pasarPage('home');" title="Inicio" class="active"><span class="icon-menu icon-inicio"></span> Inicio</a>
+            	<a href="javascript:pasarPage('inicio');" title="Inicio" class="active"><span class="icon-menu icon-inicio"></span> Inicio</a>
             </li>
             <li class="menu-dormitorio-principal">
             	<span class="linea"></span>
-                <a href="javascript:pasarPage('dormitorio');" title="Dormitorio principal"><span class="icon-menu icon-dormitorio"></span>Dormitorio principal</a>
+                <a href="javascript:pasarPage('dormitorio-principal');" title="Dormitorio principal"><span class="icon-menu icon-dormitorio"></span>Dormitorio principal</a>
            	</li>
             <li class="menu-dormitorio-ninos">
             	<span class="linea"></span>
@@ -64,8 +85,8 @@ function pasarPage(section){
             <li class="menu-muebles-especial">
                 <a href="javascript:pasarPage('muebles-especial');" title="Muebles del especial"><span class="icon-menu icon-mas-muebles"></span> Muebles del especial</a>
             </li>
-            <li class="menu-compartir">
-                <a href="javascript:pasarPage('compartir');" title="Compartir"><span class="icon-menu icon-share"></span> Compartir</a>
+            <li class="menu-muebles-compartir">
+                <a href="javascript:pasarPage('muebles-compartir');" title="Compartir"><span class="icon-menu icon-share"></span> Compartir</a>
             </li>
         </ul>
     </div>
@@ -77,7 +98,7 @@ function pasarPage(section){
         <a href="http://www.promart.pe/" target="_blank" title="Ir a Promart.pe" class="vn ir_promart hidden-mbl">Ir a Promart.pe</a>
     </div>
     
-    <div class="home page content-page">        
+    <div class="inicio page content-page">        
         <div class="s-home">
             <span class="title-especial">Especial muebles</span>
             <span class="legenda">Tu hogar, tus reglas, tu mundo</span>
@@ -86,12 +107,12 @@ function pasarPage(section){
         </div>
     </div>
 
-    <div class="page dormitorio content-page ocultar">
+    <div class="page dormitorio-principal content-page ocultar">
         
         <div class="btn-cajones">
-            <span class="sprite vermas nochero"><a href="" data-tool="<strong>Ropero Gales con espejo</strong> <span>6 puertas y 3 cajones</span>" class="tooltip_elemento enlace">Ver más</a></span>
-            <span class="sprite vermas ropero"><a href="" data-tool="<strong>Ropero Gales con espejo</strong> <span>6 puertas y 3 cajones</span>"  class="tooltip_elemento enlace">Ver más</a></span>
-            <span class="sprite vermas comoda"><a href="" data-tool="<strong>Ropero Gales con espejo</strong> <span>6 puertas y 3 cajones</span>"  class="tooltip_elemento enlace">Ver más</a></span>
+            <span class="icon-vermas nochero tooltip_elemento enlace" data-rel="<strong>Ropero Gales con espejo</strong> <span>6 puertas y 3 cajones</span>"></span>
+            <span class="icon-vermas ropero tooltip_elemento enlace" data-rel="<strong>Ropero Gales con espejo</strong> <span>6 puertas y 3 cajones</span>"></span>
+            <span class="icon-vermas comoda tooltip_elemento enlace" data-rel="<strong>Ropero Gales con espejo</strong> <span>6 puertas y 3 cajones</span>"></span>
         </div>
         
         <div class="btn-nav">
@@ -103,9 +124,9 @@ function pasarPage(section){
     <div class="page dormitorio-ninos content-page ocultar">
         
         <div class="btn-cajones">
-            <span class="sprite vermas ropero-nino"><a href="" data-tool="<strong>Ropero Gales con espejo</strong> <span>6 puertas y 3 cajones</span>" class="tooltip_elemento enlace">Ver más</a></span>
-            <span class="sprite vermas multiuso-nino"><a href="" data-tool="<strong>Ropero Gales con espejo</strong> <span>6 puertas y 3 cajones</span>"  class="tooltip_elemento enlace">Ver más</a></span>
-            <span class="sprite vermas comoda-nino"><a href="" data-tool="<strong>Ropero Gales con espejo</strong> <span>6 puertas y 3 cajones</span>"  class="tooltip_elemento enlace">Ver más</a></span>
+            <span class="icon-vermas ropero-nino tooltip_elemento enlace" data-rel="<strong>Ropero Gales con espejo</strong> <span>6 puertas y 3 cajones</span>"></span>
+            <span class="icon-vermas multiuso-nino tooltip_elemento enlace" data-rel="<strong>Ropero Gales con espejo</strong> <span>6 puertas y 3 cajones</span>" ></span>
+            <span class="icon-vermas comoda-nino tooltip_elemento enlace" data-rel="<strong>Ropero Gales con espejo</strong> <span>6 puertas y 3 cajones</span>"></span>
         </div>
         
         <div class="btn-nav">
@@ -117,9 +138,9 @@ function pasarPage(section){
     <div class="sala page content-page ocultar">
         
         <div class="btn-cajones">
-            <span class="sprite vermas sala-multiuso"><a href="" data-tool="<strong>Multiuso</strong> <span>6 puertas y 3 cajones</span>" class="tooltip_elemento enlace">Ver más</a></span>
-            <span class="sprite vermas sala-escritorio"><a href="" data-tool="<strong>Escritorio</strong> <span>6 puertas y 3 cajones</span>"  class="tooltip_elemento enlace">Ver más</a></span>
-            <span class="sprite vermas sala-silla"><a href="" data-tool="<strong>Silla</strong> <span>6 puertas y 3 cajones</span>"  class="tooltip_elemento enlace">Ver más</a></span>
+            <span class="icon-vermas sala-multiuso tooltip_elemento enlace" data-rel="<strong>Multiuso</strong> <span>6 puertas y 3 cajones</span>"></span>
+            <span class="icon-vermas sala-escritorio tooltip_elemento enlace" data-rel="<strong>Escritorio</strong> <span>6 puertas y 3 cajones</span>" ></span>
+            <span class="icon-vermas sala-silla tooltip_elemento enlace" data-rel="<strong>Silla</strong> <span>6 puertas y 3 cajones</span>"></span>
         </div>
         
         <div class="btn-nav">
@@ -131,12 +152,23 @@ function pasarPage(section){
     <div class="escritorio page content-page ocultar">
         
         <div class="btn-cajones">
-            <span class="sprite vermas biblioteca"><a href="" data-tool="<strong>Biblioteca</strong> <span>6 puertas y 3 cajones</span>" class="tooltip_elemento enlace">Ver más</a></span>
-            <span class="sprite vermas escritorio"><a href="" data-tool="<strong>Escritorio</strong> <span>6 puertas y 3 cajones</span>"  class="tooltip_elemento enlace">Ver más</a></span>
+            <span class="icon-vermas biblioteca tooltip_elemento enlace" data-rel="<strong>Biblioteca</strong> <span>6 puertas y 3 cajones</span>"></span>
+            <span class="icon-vermas item-escritorio tooltip_elemento enlace" data-rel="<strong>Escritorio</strong> <span>6 puertas y 3 cajones</span>"></span>
         </div>
         
         <div class="btn-nav">
             <span class="bn-next"><a href="escritorio.html" class="btn-siguiente txshadow" title="Siguiente ambiente">Siguiente ambiente</a></span>
+        </div>
+        
+    </div>
+
+    <div class="muebles-compartir page content-page ocultar">
+        
+        <span class="title-bebas">Compartelo en tus redes</span>
+
+        <div class="compartir-redes-sociales">
+            <a href="" class="facebook"><span class="icon-facebook"></span></a>
+            <a href="" class="twitter"><span class="icon-twitter"></span></a>
         </div>
         
     </div>

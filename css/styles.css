@@ -406,6 +406,15 @@ br {
 .icon-share:before {
   content: "\e909";
 }
+.icon-vermas:before {
+  content: "\ea0a";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
 .wancho {
   width: 96%;
   max-width: 100%;
@@ -471,17 +480,20 @@ a:focus {
   top: 62%;
 }
 .btn-cajones .ropero {
-  left: 46%;
+  left: 43%;
   top: 30%;
 }
 .btn-cajones .comoda {
-  left: 94%;
+  left: 91%;
   top: 50%;
 }
-.btn-cajones .vermas a {
-  display: block;
-  width: 100%;
-  height: 100%;
+.btn-cajones .biblioteca {
+  left: 13%;
+  top: 27%;
+}
+.btn-cajones .item-escritorio {
+  left: 75%;
+  top: 50%;
 }
 * {
   position: relative;
@@ -493,10 +505,10 @@ div.page {
   background-position: center center;
   background-attachment: fixed;
 }
-div.home {
-  background-image: url("../images/pages/foto_main.jpg");
+div.inicio {
+  background-image: url("../images/pages/home.jpg");
 }
-div.dormitorio {
+div.dormitorio-principal {
   background-image: url("../images/pages/dormitorio-principal.jpg");
 }
 div.dormitorio-ninos {
@@ -507,6 +519,18 @@ div.sala {
 }
 div.escritorio {
   background-image: url("../images/pages/escritorio.jpg");
+}
+div.muebles-compartir {
+  background-image: url("../images/pages/compartir.jpg");
+}
+body.section-dormitorio-principal .logo,
+body.section-dormitorio-ninos .logo,
+body.section-sala .logo,
+body.section-escritorio .logo,
+body.section-muebles-compartir .logo,
+body.section-muebles-especial .logo,
+.section-muebles-compartir .content-navegacion {
+  display: none;
 }
 .content-page {
   float: right;
@@ -578,7 +602,7 @@ div.escritorio {
   position: absolute;
   width: 200px;
   padding: 10px;
-  margin: 5px 0 12px 0;
+  margin: 15px 0 11px 0;
   z-index: 100;
   background: rgba(0,0,0,0.7);
   color: #fff;
@@ -588,7 +612,7 @@ div.escritorio {
   border-radius: 10px;
   top: 100%;
   left: 50%;
-  margin-left: -82px;
+  margin-left: -115px;
 }
 .tooltip:after {
   content: " ";
@@ -611,20 +635,6 @@ div.escritorio {
 }
 .sprite {
   background-image: url("../images/sprite-promart.png");
-}
-.vermas {
-  background-position: -31px -248px;
-  display: block;
-  content: "";
-  color: transparent;
-  height: 50px;
-  position: absolute;
-  width: 50px;
-}
-.vermas:hover {
-  background-position: -83px -229px;
-  height: 67px;
-  width: 67px;
 }
 .btn-nav {
   position: relative;
@@ -659,8 +669,72 @@ div.escritorio {
   width: 100%;
   height: 100%;
 }
+.btn-cajones .icon-vermas {
+  background-color: #ff9001;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 0px 0px 15px #151117;
+  position: absolute;
+}
+.btn-cajones .icon-vermas:hover {
+  transform: scale(1.2);
+  transition: all 0.35s ease;
+}
+.btn-cajones .icon-vermas:before {
+  line-height: 32px;
+}
 .ocultar {
   display: none;
+}
+.title-bebas {
+  font-family: 'Bebasneue', sans-serif;
+}
+.muebles-compartir .title-bebas {
+  font-size: 48px;
+  margin-top: 168px;
+  display: block;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.muebles-compartir .compartir-redes-sociales {
+  width: 260px;
+  margin: 35px auto auto auto;
+  overflow: hidden;
+}
+.muebles-compartir .compartir-redes-sociales .facebook {
+  display: block;
+  background-color: #3e5b99;
+  float: left;
+  color: #fff;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 61px;
+}
+.muebles-compartir .compartir-redes-sociales .facebook .icon-facebook {
+  line-height: 105px;
+}
+.muebles-compartir .compartir-redes-sociales .twitter {
+  display: block;
+  background-color: #1da1f2;
+  float: right;
+  color: #fff;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 61px;
+}
+.muebles-compartir .compartir-redes-sociales .twitter .icon-twitter {
+  line-height: 105px;
 }
 .content-page .title-especial {
   font-family: 'Lato Bold', sans-serif;
@@ -781,7 +855,21 @@ div.escritorio {
   background-color: #ffcba8;
   color: #c1783d;
 }
-.menu-compartir .icon-share {
+.menu ul.nav li.menu-escritorio:hover a .icon-menu,
+.menu ul.nav li.menu-escritorio.active a .icon-menu,
+.menu ul.nav li.menu-escritorio:hover .linea,
+.menu ul.nav li.menu-escritorio.active .linea {
+  background-color: #59bfb4;
+  color: #145851;
+}
+.menu ul.nav li.menu-muebles-compartir:hover a .icon-menu,
+.menu ul.nav li.menu-muebles-compartir.active a .icon-menu,
+.menu ul.nav li.menu-muebles-compartir:hover .linea,
+.menu ul.nav li.menu-muebles-compartir.active .linea {
+  background-color: #ffa1b7;
+  color: #9b2e54;
+}
+.menu-muebles-compartir .icon-share {
   font-size: 20px;
 }
 .menu .linea {
@@ -931,7 +1019,7 @@ div.escritorio {
   }
 }
 .btn-cajones .sala-multiuso {
-  left: 20%;
+  left: 22%;
   top: 25%;
 }
 .btn-cajones .sala-escritorio {
@@ -939,6 +1027,6 @@ div.escritorio {
   top: 63%;
 }
 .btn-cajones .sala-silla {
-  left: 78%;
+  left: 79%;
   top: 65%;
 }
