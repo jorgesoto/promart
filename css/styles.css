@@ -424,6 +424,9 @@ br {
 .icon-escritorios:before {
   content: "\e904";
 }
+.icon-menu-mobile:before {
+  content: "\e90f";
+}
 .wancho {
   width: 96%;
   max-width: 100%;
@@ -639,6 +642,8 @@ body.section-muebles-especial .logo,
   font-size: 15px;
 }
 .tooltip span {
+  font-family: 'Lato', sans-serif;
+  margin-top: 5px;
   display: block;
   font-size: 12px;
 }
@@ -1106,7 +1111,7 @@ col11 {
     display: inline-block;
     width: 32%;
     text-align: center;
-    font-size: 21px;
+    font-size: 15px;
   }
   ul.nav-movil li a {
     color: #898989;
@@ -1114,10 +1119,15 @@ col11 {
   }
   .nav-movil .icon-menu {
     display: block;
-    font-size: 80px;
+    font-size: 75px;
   }
   .nav-movil .icon-share {
     font-size: 64px;
+    line-height: 70px;
+  }
+  .nav-movil .icon-menu-mobile {
+    font-size: 50px;
+    line-height: 70px;
   }
 }
 @media (max-width: 480px) {
