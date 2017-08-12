@@ -31,10 +31,12 @@ $(document).ready(function($){
         });
     });
 
-
+    /*
     $('.icon-vermas').click(function() {
         $('#DetalleProduct').animate({marginLeft:0,opacity:"show"},1000,"linear");
     });
+
+*/
 });
 
 function pasarPage(section){
