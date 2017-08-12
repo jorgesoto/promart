@@ -407,7 +407,7 @@ br {
   content: "\e909";
 }
 .icon-vermas:before {
-  content: "\ea0a";
+  content: "\e912";
 }
 .icon-facebook:before {
   content: "\ea90";
@@ -702,6 +702,7 @@ body.section-muebles-especial .logo,
 }
 .btn-cajones .icon-vermas:before {
   line-height: 32px;
+  font-weight: bold;
 }
 .ocultar {
   display: none;
