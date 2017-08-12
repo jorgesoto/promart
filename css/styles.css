@@ -933,6 +933,15 @@ col11 {
   background-color: #ebebeb;
   height: 22px;
 }
+.mostrarProducto {
+  background-color: #fff;
+  width: 600px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  z-index: 9;
+  display: none;
+}
 .muebles-especial .header-especial {
   background-image: url("../images/muebles-del-especial.jpg");
   width: 100%;
