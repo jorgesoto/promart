@@ -415,6 +415,15 @@ br {
 .icon-twitter:before {
   content: "\ea96";
 }
+.icon-combazos:before {
+  content: "\e901";
+}
+.icon-entretenimiento:before {
+  content: "\e900";
+}
+.icon-escritorios:before {
+  content: "\e904";
+}
 .wancho {
   width: 96%;
   max-width: 100%;
@@ -736,6 +745,38 @@ body.section-muebles-especial .logo,
 .muebles-compartir .compartir-redes-sociales .twitter .icon-twitter {
   line-height: 105px;
 }
+.bn {
+  display: block;
+  text-transform: uppercase;
+  font-family: 'Lato Bold', sans-serif;
+  text-decoration: none;
+  padding: 5px;
+}
+.bn-gris {
+  background-color: #ebebeb;
+  color: #ff9001;
+}
+.bn-orange {
+  background-color: #ff9001;
+  color: #ebebeb;
+}
+.col2,
+.col3,
+col4,
+col6,
+col7,
+col8,
+col9,
+col10,
+col11 {
+  float: left;
+}
+.col4 {
+  width: 33.33333%;
+}
+.col3 {
+  width: 25%;
+}
 .content-page .title-especial {
   font-family: 'Lato Bold', sans-serif;
   display: block;
@@ -869,6 +910,13 @@ body.section-muebles-especial .logo,
   background-color: #ffa1b7;
   color: #9b2e54;
 }
+.menu ul.nav li.menu-muebles-especial:hover a .icon-menu,
+.menu ul.nav li.menu-muebles-especial.active a .icon-menu,
+.menu ul.nav li.menu-muebles-especial:hover .linea,
+.menu ul.nav li.menu-muebles-especial.active .linea {
+  background-color: #aeb8ff;
+  color: #5660a7;
+}
 .menu-muebles-compartir .icon-share {
   font-size: 20px;
 }
@@ -878,6 +926,121 @@ body.section-muebles-especial .logo,
   width: 1px;
   background-color: #ebebeb;
   height: 22px;
+}
+.muebles-especial .header-especial {
+  background-image: url("../images/muebles-del-especial.jpg");
+  width: 100%;
+  min-height: 133px;
+  background-size: cover;
+}
+.muebles-especial .header-especial .titulo-header {
+  max-width: 446px;
+  width: 30%;
+  display: block;
+  float: left;
+  color: #fff;
+  text-align: right;
+  font-size: 36px;
+  letter-spacing: 1px;
+  margin-top: 50px;
+}
+.muebles-especial .header-especial .menu-especial {
+  width: 65%;
+  overflow: hidden;
+}
+.muebles-especial .header-especial .menu-especial .nav-especial li.item-menu.activo span.ico {
+  background-color: #ff9001;
+  border: 2px solid #ff9001;
+  color: #fff;
+}
+.muebles-especial .header-especial .menu-especial .nav-especial li.item-menu.activo a {
+  color: #fff;
+}
+.muebles-especial .header-especial .menu-especial .nav-especial li.item-menu {
+  width: 24%;
+  float: left;
+  margin-left: 1%;
+  min-height: 134px;
+}
+.muebles-especial .header-especial .menu-especial .nav-especial li.item-menu:hover span.ico {
+  background-color: #ff9001;
+  border: 2px solid #ff9001;
+  color: #fff;
+}
+.muebles-especial .header-especial .menu-especial .nav-especial li.item-menu:hover a {
+  color: #fff;
+}
+.muebles-especial .header-especial .menu-especial .nav-especial li.item-menu span.ico {
+  display: block;
+  width: 54px;
+  height: 54px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-top: 32px;
+  text-align: center;
+  color: #ccc;
+  font-size: 35px;
+  line-height: 54px;
+  float: left;
+  margin-left: 20px;
+}
+.muebles-especial .header-especial .menu-especial .nav-especial li.item-menu a {
+  font-family: 'Lato Bold', sans-serif;
+  font-size: 15px;
+  color: #ccc;
+}
+.muebles-especial .header-especial .menu-especial .nav-especial li.item-menu a .t-ico {
+  margin-top: 32px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  line-height: normal;
+  float: left;
+  max-width: 55%;
+}
+.muebles-especial .group-item {
+  width: 90%;
+  margin: 25px auto auto auto;
+}
+.muebles-especial .group-item .item-product {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.muebles-especial .group-item .item-product p {
+  margin: 0;
+}
+.muebles-especial .group-item .item-product .productName {
+  font-size: 15px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+.muebles-especial .group-item .item-product .productPrecio {
+  font-size: 18px;
+  font-family: 'Lato Bold', sans-serif;
+  margin-top: 15px;
+}
+.muebles-especial .group-item .item-product .productPrecio .simbolPrecio {
+  font-size: 11px;
+}
+.muebles-especial .group-item .item-product .bnsProduct {
+  max-width: 220px;
+  overflow: hidden;
+  margin: 15px auto auto auto;
+}
+.muebles-especial .group-item .item-product .bnsProduct .bn {
+  width: 48%;
+  font-size: 10px;
+  min-height: 27px;
+  padding: 0;
+  line-height: 27px;
+}
+.muebles-especial .group-item .item-product .bnsProduct .ver-detalle {
+  float: left;
+}
+.muebles-especial .group-item .item-product .bnsProduct .agregar {
+  float: right;
 }
 @media (min-width: 490px) and (max-width: 750px) {
   .content-page .title-especial {
